@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import "@fontsource/fira-code"
+import NavBar from './component/NavBar';
+import { Container } from 'react-bootstrap';
+import { Routes, Route } from 'react-router';
+import Announce from './pages/Announce';
+import About from './pages/About';
+import ListDetail from './pages/ListDetail';
+import { Link } from 'react-router-dom';
+import ListContent from './pages/ListContent';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Link to='/' className="logo">sitesakamoto</Link>
+      <div className="inner">
+        <NavBar />
+        <div className="content">
+          <Routes>
+            <Route path='/' element={<Announce />} />
+            <Route path='/about' element={<About />}/>
+            <Route path='/List' element={<ListContent />}/>
+            <Route path='/List/:id' element={<ListDetail />} />
+          </Routes>
+        </div>
+      </div>
+    </Container> 
   );
 }
 

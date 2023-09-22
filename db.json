@@ -1,0 +1,46 @@
+{
+    "album": [
+        {
+            "id": 0,
+            "img" : "https://image.aladin.co.kr/product/2095/81/cover500/9206257013_1.jpg",
+            "title": "Three",
+            "date": "2012",
+            "about": "Returning to the harmonious blend of piano, violin, and cello after 16 years since [1996], Ryuichi Sakamoto once again captures the beauty of these instruments in his string trio album [THREE], released in 2012. Featuring some of his greatest classics in a minimal yet richly emotional style, it stands as another masterpiece in Ryuichi Sakamoto's illustrious career.",
+            "play": "https://youtu.be/IF6wn1h229M?feature=shared"
+        },
+        {
+            "id": 1,
+            "img" : "https://image.aladin.co.kr/product/10747/93/cover500/c822735028_3.jpg",
+            "title": "async",
+            "date": "2017",
+            "about": "async is a unique and experimental album that showcases Sakamoto's exceptional talent for blending various musical styles and genres. It explores a wide range of electronic and classical influences, creating a mesmerizing and introspective soundscape. The album incorporates elements of ambient music, glitchy electronica, and contemporary classical composition.",
+            "play": "https://youtu.be/vppKHuw5N1U?feature=shared"
+        },
+        {
+            "id": 2,
+            "img" : "https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/675/021/80675021_1440556714307_1_600x600.JPG/dims/resize/Q_80,0",
+            "title": "Ryuichi Sakamoto Playing the Piano 2013 in Yokohama",
+            "date": "2013",
+            "about": "Ryuichi Sakamoto – Playing the Piano 2013 in Yokohama is a live concert performance by the renowned Japanese musician and composer Ryuichi Sakamoto. The concert took place in Yokohama, Japan, in 2013. In this performance, Ryuichi Sakamoto showcased his piano skills and played a selection of his compositions from various stages of his career.",
+            "play": "https://youtu.be/2n8SenVxWGc?feature=shared"
+        },
+        {
+            "id": 3,
+            "img" : "https://image.aladin.co.kr/product/29252/19/cover500/c782936194_1.jpg",
+            "title": "남한산성",
+            "date": "2017",
+            "about": "This work is a limited edition analog release that contains the original soundtrack of the 2017 film [The Fortress], which garnered attention and acclaim, by Ryuichi Sakamoto. It is a significant piece that allows you to encounter beautiful and thrilling music created using traditional Korean folk instruments such as the ajaeng and piri, in addition to string instruments and piano.",
+            "play": "https://youtu.be/9HTcKSnnFcE?feature=shared"
+        },
+        {
+            "id": 4,
+            "img" : "https://image.aladin.co.kr/product/30635/32/cover500/c102937784_1.jpg",
+            "title": "12",
+            "date": "2023",
+            "about": "In early March 2021, shortly after a major surgery, I recorded sketches as if I were writing a diary. Among them, I selected 12 sketches that I liked and tried to create an album. This is my current sound, intentionally presented exactly as it is without any alterations.",
+            "play": "https://youtu.be/RgHudVLHNPg?feature=shared"
+        }
+        
+
+    ]
+}
