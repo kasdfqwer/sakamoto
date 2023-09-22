@@ -11,34 +11,72 @@ a {
   color: #111;
   
 }
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.Intro {
+  cursor: pointer;
+}
+.Intro h1 {
+  margin-top: 20px;
+  text-align: center;
+}
+.mainbg {
+  width: 500px; height: 300px;
+  background: url(../src/mainbg.jpg) no-repeat center/cover;
+}
 .logo {
   display: block;
   font-size: 30px;
   margin-bottom: 30px;
 }
-.inner {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-.inner .menu-area {
+.menu-area {
   flex-basis: 20%;
-  display: flex;
-  flex-direction: column;
 }
-.inner .menu-area a {
+.menu-area > a {
+  display: block;
   margin-bottom: 15px;
 }
-.inner .content {
-  flex-basis: 70%;
+
+.sns {
+  margin-top: 20px;
 }
-.content .container > div {
-  padding: 30px 0;
-  border-bottom: 1px solid #efefef;
-  box-sizing: border-box;
+.sns a {
+  display: block;
+  margin-bottom: 5px;
 }
-.content .container > div:first-child {
-  padding-top: 0;
+.sns a svg {
+  width: 16px; height: 16px;
+  margin-right: 10px;
+}
+
+.contwrap {
+  display: flex;
+  justify-content: center;
+}
+.contwrap .contA {
+  flex-basis: 60%;
+  margin-top: 55px;
+}
+.contwrap .contA .profileW {
+  display: flex;
+  justify-content: center;
+
+}
+.contwrap .contA .profileW .profile {
+  flex-basis: 100%; height: 400px;
+  background: url(../src/profile.jpg) no-repeat center/cover;
+  margin-right: 30px;
+}
+.contwrap .contA .profileW .about-text {
+  flex-basis: 170%;
+}
+.album-card {
+  margin-bottom: 30px;
 }
 .album-list {
   display: flex;
@@ -52,9 +90,18 @@ a {
 .album-img img {
   max-width: 100%;
   max-height: 100%;
+  border: 1px solid #efefef;
 }
 .text-area {
   margin-top: 30px;
+}
+.text-area .title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.text-area .date {
+  font-size: 14px;
+  color: rgba(0, 0, 0, .9);
 }
 
 .detail-area {
@@ -93,4 +140,19 @@ a {
 .sns a svg {
   width: 16px; height: 16px;
   margin-right: 10px;
+}
+.announceW {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.announceW .announce-inner {
+  width: 50%;
+  margin: 20px auto;
+}
+.about-go {
+  display: block;
+  width: 50px; height: 50px;
+  background: url(../src/chrysanthemum.png) no-repeat center/cover;
+  margin: 0 auto;
 }

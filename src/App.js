@@ -8,24 +8,21 @@ import About from './pages/About';
 import ListDetail from './pages/ListDetail';
 import { Link } from 'react-router-dom';
 import ListContent from './pages/ListContent';
+import IntroPage from './pages/IntroPage';
 
 
 function App() {
   return (
-    <Container>
-      <Link to='/' className="logo">sitesakamoto</Link>
-      <div className="inner">
-        <NavBar />
-        <div className="content">
+    <>
+        {/* <NavBar /> */}
           <Routes>
-            <Route path='/' element={<Announce />} />
+            <Route path='/' element={<IntroPage />} />
+            <Route path='/Announce' element={<Announce />} />
             <Route path='/about' element={<About />}/>
             <Route path='/List' element={<ListContent />}/>
             <Route path='/List/:id' element={<ListDetail />} />
           </Routes>
-        </div>
-      </div>
-    </Container> 
+    </> 
   );
 }
 

@@ -10,6 +10,7 @@ const NavBar = () => {
   return (
     <>
      <div className="menu-area">
+        <NavLink to='/' className="logo">sitesakamoto</NavLink>
         <NavLink to='/about'>about</NavLink>
         <NavLink to='/List'>album</NavLink>
         <div className="sns">

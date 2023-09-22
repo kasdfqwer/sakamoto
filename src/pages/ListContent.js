@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { Container } from 'react-bootstrap';
+import { Container, Navbar } from 'react-bootstrap';
 import { useSearchParams } from 'react-router-dom'
 import AlbumCard from '../component/AlbumCard';
+import NavBar from '../component/NavBar';
 
 const ListContent = () => {
   const [album, setAlbum] = useState([]);
@@ -18,16 +19,21 @@ const ListContent = () => {
     getAlbumDetail();
   }, [query])
   return (
-    <Container>
-        {
-            album.map((menu, idx) => (
-                <div key={idx}>
-                    <AlbumCard item={menu} />
-                </div>
-            ))
-        }
+    <div className='contwrap'>
+      <NavBar/>
+        <div className="contA">
+          <div className="albumW">
+            {
+                album.map((menu, idx) => (
+                    <div className='album-card' key={idx}>
+                        <AlbumCard item={menu} />
+                    </div>
+                ))
+            }
+          </div>
+        </div>
         {/* 한 개씩 출력(map) , menu - 임의의 인자값 배열 각각의 값, productcard에 출력 props를 통해 item={menu} */}
-    </Container>
+    </div>
   )
 }
 

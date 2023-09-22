@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
+import NavBar from '../component/NavBar';
 
 const ListDetail = () => {
   const {id} = useParams();
@@ -16,19 +17,22 @@ const ListDetail = () => {
     getAlbumDetail();
   }, [])
   return (
-    <>
-     <div className="detail-area">
-        <div className="img-area">
-            <img src={album?.img} alt="" />
-        </div>
-        <div className="txt-area">
-            <p className="title">{album?.title}</p>
-            <p className="date">{album?.date}</p>
-            <p className="about-this">{album?.about}</p>
-            <a href={album?.play} className='go-play'></a>
-        </div>
+    <div className='contwrap'>
+      <NavBar />
+     <div className='contA'>
+       <div className="detail-area">
+          <div className="img-area">
+              <img src={album?.img} alt="" />
+          </div>
+          <div className="txt-area">
+              <p className="title">{album?.title}</p>
+              <p className="date">{album?.date}</p>
+              <p className="about-this">{album?.about}</p>
+              <a href={album?.play} className='go-play'></a>
+          </div>
+       </div>
      </div>
-    </>
+    </div>
   )
 }
 
