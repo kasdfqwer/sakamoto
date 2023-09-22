@@ -9,7 +9,8 @@ const ListContent = () => {
   const [query, setQuery] = useSearchParams();
   const getAlbumDetail = async() => {
     let searchQuery = query.get('q')||""
-    let url = `http://localhost:5000/album/${searchQuery}`
+    /* let url = `http://localhost:5000/album/${searchQuery}` */
+    let url=`https://my-json-server.typicode.com/kasdfqwer/sakamoto/album/${searchQuery}`
     let response = await fetch(url);
     let data = await response.json();
     setAlbum(data)

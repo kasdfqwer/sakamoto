@@ -7,7 +7,7 @@ const ListDetail = () => {
   const [album, setAlbum] = useState([null]);
   const getAlbumDetail = async() => {
     /* let url = `http://localhost:5000/album/${id}` */
-    let url=`https://my-json-server.typicode.com/ksdfqwer/sakamoto/album/${id}`
+    let url=`https://my-json-server.typicode.com/kasdfqwer/sakamoto/album/${id}`
     let response = await fetch(url);
     let data = await response.json();
     console.log(data)
